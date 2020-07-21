@@ -1,0 +1,51 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+body {
+  font-family: "Titillium Web";
+  font-size: 16px;
+  line-height: 1.2em;
+  background-color: #2d3436;
+  color: #dfe6e9;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.section__slider {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.section__slider-title {
+  color: #2d3436;
+  -webkit-text-stroke: 2px rgba(223, 230, 233, 0.4);
+  text-transform: uppercase;
+  text-align: center;
+}
+.section__slider-subtitle {
+  margin-top: -30px;
+  text-align: center;
+}
+.section__slider .swiper-container {
+  position: relative;
+}
+.section__slider .swiper-container .swiper-slide {
+  width: 25%;
+}
+.section__slider .swiper-container .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+.section__slider .swiper-container .slider__absolute-element {
+  position: absolute;
+  top: 0;
+  left: 101px;
+  z-index: 10;
+  padding: 20px;
+  height: 100%;
+  width: 192px;
+  background-color: #2d3436;
+  box-sizing: border-box;
+}
